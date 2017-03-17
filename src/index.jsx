@@ -1,19 +1,40 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import YTSearch from 'youtube-api-search';
 
 import SearchBar from './components/search_bar';
+import VideoList from './components/video_list';
+import VideoDetail from './components/video_detail';
+const API_KEY = "AIzaSyD6bn9xTLQUsFwKMX9Iijd8A_LodqbwC24";
 
+class App extends Component {
+  constructor(props) {
+    super(props);
 
-// const createStoreWithMiddleware = applyMiddleware()(createStore);
+    this.state = {
+      videos: [],
+      selectedVideo: null
+    };
 
-// const API_KEY = AIzaSyBFEKvZVIfp8AnQO0tN6TqVe0zk717TXrk;
+    YTSearch({key: API_KEY, term: 'surfboards,'},(videos) => {
+      this.setState({
+        videos: videos,
+        selectedVideo: videos[0]
+      });
+    });
+}
 
-const App = () => {
-  return (
-    <div>
-      <SearchBar/>
-    </div>
-  )
+  render() {
+    return (
+      <div>
+        <SearchBar/>
+        <VideoDetail video={this.state.selectedVideo}/>
+        <VideoList
+          onVideoSelect={selectedVideo => this.setState({selectedVideo})}
+          videos={this.state.videos} />
+      </div>
+    );
+  }
 }
 
 ReactDOM.render( <App />, document.querySelector('.container'));
