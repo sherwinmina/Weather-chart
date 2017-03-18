@@ -1,6 +1,6 @@
-# Video Player
+# Book_List
 
-A Video Search Player Using the YouTube API.
+A small Book List App with Redux
 
 
 ## Getting Started
@@ -14,7 +14,7 @@ Add additional notes about how to deploy this on a live system
 
 * [React](https://facebook.github.io/react/) - The web framework used
 * [NPM](https://www.npmjs.com) - Dependency Management
-* [Youtube API v3](https://developers.google.com/…) - Used to search for Vidoes
+* [Redux](http://redux.js.org) - Used to search for Vidoes
 
 ## Authors
 
