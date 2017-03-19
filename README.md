@@ -1,6 +1,6 @@
-# Book_List
+# Weather-Chart
 
-A small Book List App with Redux
+A small React component that creates a weather chart
 
 
 ## Getting Started
