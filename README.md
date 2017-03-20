@@ -1,6 +1,6 @@
 # Weather-Chart
 
-A small React component that creates a weather chart for a five day forecast using the OpenWeatherMap API. 
+A small React component that creates a weather chart for a five day forecast using the OpenWeatherMap API and a third party library react-sparkline.
 
 
 ## Getting Started
@@ -12,7 +12,10 @@ These instructions will get you a copy of the project up and running on your loc
 
 * [React](https://facebook.github.io/react/) - The web framework used
 * [NPM](https://www.npmjs.com) - Dependency Management
-* [Redux](http://redux.js.org) - Used to search for Vidoes
+* [Redux](http://redux.js.org)
+* [react-sparkline](https://github.com/borisyankov/react-sparklines)
+
+
 
 ## Authors
 
