@@ -1,5 +1,5 @@
 {
-  "name": "Redux-Video-Player",
+  "name": "Weather-Chart",
   "version": "1.0.0",
   "description": "Simple starter package for Redux with React and Babel support",
   "main": "index.js",
@@ -7,7 +7,8 @@
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "test:watch": "npm run test -- --watch",
+    "surge-deploy": "surge -p build -d weather-chart.surge.sh"
   },
   "author": "Sherwin Mina",
   "license": "ISC",
