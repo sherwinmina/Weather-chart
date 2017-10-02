@@ -1,3 +1,7 @@
+html{
+  padding-top: 40px;
+}
+
 td, th {
   verticle-align: middle !important;
   text-align: center !important;
